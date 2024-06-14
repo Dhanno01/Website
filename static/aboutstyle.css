@@ -1,0 +1,101 @@
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading h1{
+    padding-top: 35px;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.heading h4{
+    text-align: center;
+    font-size: 23px;
+    color: #e22b2b;
+    padding: 13px;
+}
+
+.heading{
+    min-height: 30rem;
+    width:100%;
+    background-color: #8dafc6; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,133.3C384,128,480,160,576,154.7C672,149,768,107,864,96C960,85,1056,107,1152,117.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#content{
+    margin-top: 7rem;
+    padding: 1rem 7rem;
+    text-align: center;
+    font-size: 19px;
+    line-height: 26px;
+    color: #e22b2b;
+}
+
+#content1{
+    padding: 1rem 7rem;
+    text-align: center;
+    font-size: 19px;
+    line-height: 26px;
+    color: #e22b2b;
+}
+
+#content2{
+    margin-bottom: 4rem;
+    padding: 1rem 7rem;
+    text-align: center;
+    font-size: 19px;
+    line-height: 26px;
+    color: #e22b2b;
+}
+
+.moreinfo{
+    width: 100%;
+    background-color: #8dafc6;
+    height:350px
+}
+
+.moreinfo h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 62px;
+    font-weight: 500;
+    color: #3c3c3f;
+}
+
+.moreinfo h4{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 12px;
+    color:#8c4638
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#col h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 45px;
+    padding: 10px;
+    color: #fff
+}
+
+#col h3{
+    font-size: 21px;
+    padding-bottom: 5rem;
+    color:#e22b2b
+}

@@ -1,0 +1,47 @@
+.container {
+    min-height: 75vh;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 44px;
+    padding: 26px;
+    font-weight: 100;
+    color: #f51313;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the columns to wrap */
+    justify-content: center; /* Center the items horizontally */
+}
+
+#col {
+    flex: 0 1 calc(25% - 20px); /* Adjust width to 25% minus the margins */
+    margin: 10px; 
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+#col img {
+    width: 278px;
+    height: 246px;
+    border-radius: 3rem;
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+#col h3 {
+    text-align: center;
+    margin: 0; 
+    font-size: 1.2rem; 
+}
+
+
+#col h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    color:#f51313;
+}

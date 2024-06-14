@@ -1,0 +1,17 @@
+extends layout.pug
+
+block style
+    style
+        include ../static/style.css
+        include ../static/dancestyle.css
+
+block content
+    div.container
+        h1 Styles We Teach 
+        #row  
+          each dance in dances
+            #col
+              img(src=dance.image, alt=dance.name)
+              h3=dance.name
+        h1 And Many More....
+        

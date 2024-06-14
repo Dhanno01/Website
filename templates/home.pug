@@ -1,0 +1,64 @@
+extends layout.pug
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        .row
+            .column#text
+                h1 GrooveSphere
+                h2 Where Every Step Tells A Story.
+                a(href="/trial")
+                    button.btn Book Your Trial  
+            .column#image
+                img(src='/static/images/background.jpg', alt='Image')
+    
+    section#infoSection 
+        h1 Step-By-Step Learning For All Levels 
+        h4 Whether you’re just starting out or you’ve got some training under your belt – we got you covered.
+        .row1#card 
+            .col 
+                h2 BRAND NEW
+                h3 Got two left feet? Start with our 10-day intro program.
+            .col 
+                h2 BEGINNER
+                h3 Got the basics down? Level up with new moves and routines.
+            .col
+                h2 INTERMEDIATE
+                h3 Feel pretty confident? Learn more exciting skills and pieces.
+            .col
+                h2 ADVANCED
+                h3 Already killin’ it? Train with the best in the game.
+    
+    section#about 
+        .row2
+            .column1
+                img(src='/static/images/about.png', alt='About') 
+            .column1#text2
+                h1 Leading Dance Studio
+                p Welcome to GrooveSphere. We are a dance studio based in India. We, at GrooveSphere, offer multiple dance sessions in India by the top dance instructors in this industry. GrooveSphere is a well known dance class for its amazing teaching skills, viral virtual dance classes, excellent dance instructors, decent staff, friendly environment as well as the way we work to boosts up your creativity and so on.
+                a(href="/about")
+                    button Know More  
+    
+    section#danceStyles
+        h1 Learn A Variety of Dance Styles
+        .row1#card
+            .col1
+                img(src='/static/images/ballet.jpg', alt='Ballet')
+                h3 Ballet
+            .col1
+                img(src='/static/images/hip hop.jpg', alt='Hip-Hop')
+                h3 Hip-Hop
+            .col1 
+                img(src='/static/images/workout.jpg', alt='Workout')
+                h3 Workout
+        a(href="/styles")
+            button.btn1 Discover More
+            
+    section#contact 
+        h1 Start With Free Trial Classes
+        p Not sure if which dance style you want to choose, Book your Free trial classes, For more information, get in touch. Currently we are offering Jazz, Salsa, Hip Hop, Bollywood, Contemporary, Classical, Bharatanatyam, Kathak, Manipuri. Start off with our dance choreographers now.
+        a(href="/trial")
+            button.btn1 Book Free Trial
