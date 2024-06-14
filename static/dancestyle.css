@@ -30,6 +30,11 @@
     border-radius: 3rem;
     object-fit: cover;
     margin-bottom: 10px; 
+    transition: transform 0.3s ease;
+}
+
+#col img:hover {
+    transform: scale(1.05);
 }
 
 #col h3 {
