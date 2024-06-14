@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-    res.status(200).render('home.pug');
+    res.status(200).render('index.pug');
 });
 
 
@@ -36,7 +36,7 @@ app.post('/contact', (req, res) => {
 
     enquiry.save()
         .then(() => {
-            res.status(200).render('home.pug');
+            res.status(200).render('index.pug');
             console.log('Successfully saved');
         })
         .catch((error) => {
@@ -73,7 +73,7 @@ app.post('/trial', (req, res) => {
 
     trial.save()
         .then(() => {
-            res.status(200).render('home.pug');
+            res.status(200).render('index.pug');
             console.log('Successfully saved');
         })
         .catch((error) => {
