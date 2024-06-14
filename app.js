@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 
 app.use('/static', express.static('static'));  // For serving static files
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 
 
 app.set('view engine', 'pug');   //Set the template engine as pug
@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-    res.status(200).render('index.pug');
+    res.status(200).render('index');
 });
 
 
