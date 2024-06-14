@@ -6,7 +6,7 @@ const Contact = require('./models/contact');
 const Dance = require('./models/dance');
 const Trial = require('./models/trial');
 const bodyParser = require('body-parser');
-const port = 5000;
+
 
 
 app.use('/static', express.static('static'));  // For serving static files
@@ -83,6 +83,7 @@ app.post('/trial', (req, res) => {
 });  
 
 
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log('listening on port ' + port);
 });
