@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-const mongoURL = 'mongodb://127.0.0.1:27017/danceinfo';  // MongoDB connection URL
+dotenv.config();
+
+const mongoURL = process.env.DATABASE_URL;  // MongoDB connection URL
 
 mongoose.connect(mongoURL)
   .then(() => {

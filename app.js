@@ -1,13 +1,14 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const dotenv = require('dotenv');
 const db = require('./db');
 const Contact = require('./models/contact');
 const Dance = require('./models/dance');
 const Trial = require('./models/trial');
 const bodyParser = require('body-parser');
 
-
+dotenv.config(); 
 
 app.use('/static', express.static('static'));  // For serving static files
 app.use(express.urlencoded({ extended: true }))
