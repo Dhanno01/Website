@@ -5,12 +5,14 @@ h1{
     font-weight: 400;
     color: #f51313;
     padding-top: 2rem;
+    text-align: center;
 }
 
 .container p{
     font-size: 22px;
     padding: 12px 0;
     color:#3c3c3f;
+    text-align: center;
 }
 
 .myform{

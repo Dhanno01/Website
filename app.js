@@ -52,10 +52,10 @@ app.get('/about', (req, res) => {
 });
 
 
-app.get('/styles',  (req, res) => {
+app.get('/styles', async(req, res) => {
   try {
-      const dances = Dance.find();
-      res.render('styles', { dances });
+      const dances = await Dance.find().exec();
+      res.render('styles.pug', { dances });
   } catch (error) {
     res.status(500).send('Error fetching dance styles');
   }

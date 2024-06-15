@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 
 #navbar {
     background-color: #f6f1f1;
@@ -332,4 +328,154 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+    
+
+* {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    #navbar {
+    padding: 20px 0px;
+    }
+
+/* Intro section styles */
+
+#introSection{
+    height:284px;
+}
+
+#introSection .row {
+    display: flex;
+    flex-direction: column;
+}
+
+#introSection .column {
+    flex: 1;
+    padding:0px;
+    margin:0px;
+}
+
+#introSection #image {
+    
+    display:none;
+}
+
+#introSection .btn {
+    margin-top: 2rem;
+}
+
+/* Info section styles */
+#infoSection {
+    height: 285px;
+}
+
+#infoSection h1 {
+    font-size: 33px;
+}
+
+#infoSection h4 {
+    font-size: 20px;
+    padding:12px
+}
+
+#infoSection .row1 {
+    margin-top: 20px;
+}
+
+#infoSection .col {
+   
+    margin: 0 7px;
+    padding: 10px;
+}
+
+#infoSection .col h3 {
+    font-size: 20px;
+}
+
+#infoSection .col h2 {
+    font-size: 23px;
+}
+
+/* About section styles */
+#about {
+    
+    padding: 30px;
+}
+
+
+.column1 img {
+    
+    max-width: 396px; 
+}
+
+#text2 {
+   padding-bottom: 7rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.column1 h1 {
+    font-size: 37px;
+    padding-top: 83px;
+}
+
+.column1 p {
+    font-size: 16px;
+    padding: 16px;
+}
+
+#about .column1 button {
+    font-size: 20px;
+    margin:2rem 0;
+}
+
+/* Dance styles section styles */
+#danceStyles {
+    padding: 0px;
+}
+
+/* Contact section styles */
+
+
+#contact h1 {
+    font-size: 2.5rem;
+    
+}
+
+#contact p {
+    font-size: 18px;
+    padding:14px;
+}
+   
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+#infoSection{
+    height:auto;
+}
+
+#infoSection .col {
+        margin: 17px 12px;
+}
+
+#about .row2 {
+    flex-direction: column;
+}
+
+#navbar li a {
+    padding: 0px 23px;
+}
+
 }
