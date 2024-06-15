@@ -65,3 +65,16 @@ h1{
     align-items: center;
     background-color: #8dafc6 ;
 }
+
+
+@media (min-width: 400px) and (max-width: 1024px) {
+
+.myinput{
+    width: 88%;
+}
+
+.container .btn{
+    margin: 1rem;
+}
+
+}
