@@ -57,7 +57,7 @@ app.get('/styles', async (req, res) => {
       const dances = await Dance.find();
       res.render('styles', { dances });
   } catch (error) {
-    res.status(500).send('Error fetching dance styles',error);
+    res.status(500).send('Error fetching dance styles');
   }
 });
 
