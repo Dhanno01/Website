@@ -5,6 +5,7 @@ dotenv.config();
 
 const mongoURL = process.env.DATABASE_URL;  // MongoDB connection URL
 
+
 mongoose.connect(mongoURL)
   .then(() => {
     console.log('Connected to MongoDB server');
